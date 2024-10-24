@@ -1,6 +1,7 @@
 // Cores
 const typeColor = {
     bug: "#91A119",
+    dark: "#181e31",
     dragon: "#ffeaa7",
     electric: "#fed330",
     fairy: "#FF0069",
