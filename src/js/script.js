@@ -36,7 +36,6 @@ let getPokeData = () => {
 };
 
 let generateCard = (data) => {
-    console.log(data);
     const hp = data.stats[0].base_stat;
     const imgSrc = data.sprites.other.home.front_default;
     const pokeName = data.name[0].toUpperCase() + data.name.slice(1);
@@ -52,7 +51,7 @@ let generateCard = (data) => {
             <span>HP</span>
                 ${hp}
         </p>
-        <img src=${imgSrc} />
+        <img src=${imgSrc} alt="Imagem do Pokémon ${pokeName}" />
         <h2 class="poke-name">${pokeName}</h2>
         <div class="types">
         </div>
@@ -87,7 +86,6 @@ let appendTypes = (types) => {
 
 let styleCard = (color) => {
     card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ffffff 36%)`;
-    console.log(pokeId);
 };
 
 btn.addEventListener("click", getPokeData);
