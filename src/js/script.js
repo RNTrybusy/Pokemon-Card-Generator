@@ -88,5 +88,6 @@ let styleCard = (color) => {
     card.style.background = `radial-gradient(circle at 50% 0%, ${color} 36%, #ffffff 36%)`;
 };
 
+addEventListener('keydown', (e) => { if (e.key === 'Enter') { getPokeData(); } });
 btn.addEventListener("click", getPokeData);
 window.addEventListener("load", getPokeData);
