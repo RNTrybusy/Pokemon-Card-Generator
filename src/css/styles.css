@@ -75,8 +75,8 @@
 
 .digiteId {
     display: block;
+    margin: 10px auto;
     padding: 5px 5px;
-    align-items: center;
     width: 360px;
     position: relative;
 }

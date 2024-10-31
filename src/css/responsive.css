@@ -82,7 +82,7 @@
     .digiteId {
         width: 100%;
         max-width: 360px;
-        position: relative;
+        margin: 10px auto;
         align-items: center;
     }
 }
